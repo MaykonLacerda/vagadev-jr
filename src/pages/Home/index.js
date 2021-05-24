@@ -1,9 +1,12 @@
-import React from 'react';
+import React  from 'react';
+
+import BannerSlider from '../../components/Banner/BannerSlider'
 
 function Home() {
-  return(
+
+  return (
     <div>
-      <h1>Home</h1>
+      <BannerSlider />
     </div>
   );
 }
