@@ -1,0 +1,44 @@
+import React from 'react';
+import { Link } from "react-router-dom";
+
+import './styles.css';
+
+import menu from '../../assets/svgs/icon_hamburguer.svg'
+import logo from '../../assets/svgs/logo-n1-rush-fundo-escuro.svg'
+import paper_plane from '../../assets/svgs/paper-plane.svg'
+import search from '../../assets/svgs/search-solid.svg'
+import shopping_bag from '../../assets/svgs/shopping-bag-solid.svg'
+
+export const NavBar = () => {
+  return (
+    <nav className="nav">
+      <ul className="nav-list">
+        <div className="nav-item">
+          <li className="menu"><img src={menu} alt="menu"></img></li>
+
+          <Link to="/">
+            <li>
+              <img src={logo} alt="N1 Rush"></img>
+            </li>
+          </Link>
+        </div>
+        <Link to="/" className="nav-item">
+          <li><img src={paper_plane} alt="Contato"></img></li>
+          <li>Contato</li>
+        </Link>
+
+        <Link to="/" className="nav-item">
+          <li><img src={search} alt="Buscar"></img></li>
+          <li>Buscar</li>
+        </Link>
+
+        <Link to="/" className="nav-item">
+          <li><img src={shopping_bag} alt="Carrinho"></img></li>
+          <li>2</li>
+        </Link>
+      </ul>
+    </nav>
+  )
+}
+
+export default NavBar;
