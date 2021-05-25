@@ -11,7 +11,7 @@ import shopping_bag from '../../assets/svgs/shopping-bag-solid.svg'
 
 export const NavBar = () => {
   return (
-    <nav className="nav">
+    <nav className="nav wrapper">
       <ul className="nav-list">
         <div className="nav-item">
           <li className="menu"><img src={menu} alt="menu"></img></li>

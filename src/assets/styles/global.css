@@ -1,6 +1,7 @@
 :root {
   --color-background: #E5E5E5;
-  --color-dark-blue: #084154;
+  --color-text-theme: #084154;
+  --color-background-theme: #3EC6E0;
   --test: green;
 }
 
@@ -12,11 +13,10 @@
 
 body {
   font: 500 1.6rem Roboto;
-  background: var(--test)
+  background: var( --test)
 }
 
 .wrapper {
-  margin: 0 auto;
-  max-width: 1189px;
-  padding: 0 10px;
+  width: 100%;
+  padding: 0 15%;
 }

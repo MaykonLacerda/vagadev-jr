@@ -1,18 +1,54 @@
+
+.nav {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
 .cards {
   display: flex;
   justify-content: center;
-  align-content: space-between;
+  align-items: center;
 }
 
-.cards img {
+.card img {
   width: 627px;
   height: 368px;
+}
+
+.card {
   padding: 0 10px;
 }
 
-.cards p {
+.top-card {
+  margin-bottom: -10px;
+}
+
+.name-card {
   font-size: 16px;
   font-weight: bold;
-  color: var(--color-dark-blue);
-  padding-left: 40px;
+
+  color: var(--color-text-theme);
+  padding: 21px 0 21px 30px;
+  background: var(--color-background-theme);
+  border-radius: 5px;
+}
+
+.featured h2 {
+  color: var(--color-text-theme);
+  font-weight: 300;
+  font-size: 36px;
+}
+
+.featured-title {
+  display: flex;
+  align-items: center;
+  padding: 0
+}
+
+
+
+.end {
+  margin-bottom: 200px;
 }

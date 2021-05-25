@@ -5,6 +5,7 @@ import NavBar from '../../components/NavBar/NavBar'
 
 import zelda from '../../assets/img/zelda_banner.jpg'
 import sekiro from '../../assets/img/sekiro_banner.jpg'
+import featured_icon from '../../assets/svgs/featured-icon.svg'
 
 import "./styles.css"
 
@@ -13,18 +14,13 @@ function Home() {
   return (
     <div>
       <header className="header">
-        <div className="nav wrapper">
           <NavBar />
-        </div>
+          <BannerSlider />
       </header>
 
-      <main>
-        <div className="banner">
-          <BannerSlider />
-        </div>
-
-        <div className="cards wrapper">
-          <div className="card-left">
+      <main className="wrapper">
+        <div className="cards">
+          <div className="card">
             <div className="top-card">
               <img src={zelda} alt="Zelda"/>
             </div>
@@ -33,7 +29,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="card-right">
+          <div className="card">
             <div className="top-card">
               <img src={sekiro} alt="Sekiro"/>
             </div>
@@ -42,6 +38,15 @@ function Home() {
             </div>
           </div>
         </div>
+
+        <div className="featured">
+          <div className="featured-title">
+            <img src={featured_icon} alt="Zelda"/>
+            <h2>Produtos em destaque</h2>
+          </div>
+        </div>
+
+        <div className="end"></div>
 
       </main>
     </div>
