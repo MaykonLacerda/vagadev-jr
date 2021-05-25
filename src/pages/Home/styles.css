@@ -1,0 +1,18 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.cards img {
+  width: 627px;
+  height: 368px;
+  padding: 0 10px;
+}
+
+.cards p {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--color-dark-blue);
+  padding-left: 40px;
+}

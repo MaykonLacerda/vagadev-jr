@@ -1,7 +1,5 @@
-.banner-desktop {
-  position: absolute;
+.banner-desktop img {
   width: 1920px;
   height: 840px;
-  left: 0px;
-  top: 0px;
 }
+

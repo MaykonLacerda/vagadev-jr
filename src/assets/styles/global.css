@@ -1,0 +1,22 @@
+:root {
+  --color-background: #E5E5E5;
+  --color-dark-blue: #084154;
+  --test: green;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 500 1.6rem Roboto;
+  background: var(--test)
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1189px;
+  padding: 0 10px;
+}
