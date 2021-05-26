@@ -9,6 +9,8 @@
 .principal-cards {
   position: absolute;
   top: 692px;
+  left: 0;
+  right: 0;
 
 }
 
