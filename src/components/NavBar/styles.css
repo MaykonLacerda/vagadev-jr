@@ -22,6 +22,7 @@
   font-size: 14px;
   font-weight: 500;
   color: #FFF;
+
 }
 
 .nav-item img {
@@ -30,7 +31,16 @@
 
 .nav-item:first-child{
   margin-right: auto;
-  margin-left: 2rem;
+}
+
+.client-menu {
+  display: flex;
+  border-right: 1px solid;
+}
+
+.nav-item.client-menu {
+  margin: 0 39px 0 -39px;
+  padding-left: 39px;
 }
 
 .menu {

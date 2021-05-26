@@ -22,20 +22,22 @@ export const NavBar = () => {
             </li>
           </Link>
         </div>
-        <Link to="/" className="nav-item">
-          <li><img src={paper_plane} alt="Contato"></img></li>
-          <li>Contato</li>
-        </Link>
+        <div className="client-menu">
+          <Link to="/" className="nav-item client-menu">
+            <li><img src={paper_plane} alt="Contato"></img></li>
+            <li>Contato</li>
+          </Link>
 
-        <Link to="/" className="nav-item">
-          <li><img src={search} alt="Buscar"></img></li>
-          <li>Buscar</li>
-        </Link>
+          <Link to="/" className="nav-item client-menu">
+            <li><img src={search} alt="Buscar"></img></li>
+            <li>Buscar</li>
+          </Link>
 
-        <Link to="/" className="nav-item">
-          <li><img src={shopping_bag} alt="Carrinho"></img></li>
-          <li>2</li>
-        </Link>
+          <Link to="/" className="nav-item">
+            <li><img src={shopping_bag} alt="Carrinho"></img></li>
+            <li>2</li>
+          </Link>
+        </div>
       </ul>
     </nav>
   )

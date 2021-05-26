@@ -1,0 +1,26 @@
+.principal-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  width: 627px;
+  height: 368px;
+}
+
+.card {
+  padding: 0 10px;
+}
+
+.card p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: -10px;
+
+  color: var(--color-base-theme-1);
+  padding: 21px 0 21px 19px;
+  background: var(--color-base-theme-2);
+  border-radius: 5px;
+  border-left: 11px solid var(--color-base-theme-1);
+}
