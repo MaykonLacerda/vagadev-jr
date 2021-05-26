@@ -20,17 +20,21 @@ const BannerSlider = () => {
   const banner = BannerData;
 
   return (
-    <div className="banner-desktop">
+    <div>
       <Slider {...settings}>
         {banner.map((banner) => {
           return(
-            <div>
+            <div className="banner">
               <img src={banner.image} alt={banner.name} />
+              <div className="banner-content">
+                <h1>{banner.name}</h1>
+                <h2>{banner.value}</h2>
+                <p>{banner.description}</p>
+              </div>
             </div>
           )
         })}
       </Slider>
-
     </div>
   )
 }

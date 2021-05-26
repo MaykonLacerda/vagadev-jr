@@ -1,7 +1,8 @@
 :root {
   --color-background: #E5E5E5;
-  --color-text-theme: #084154;
-  --color-background-theme: #3EC6E0;
+  --color-base-theme-1: #084154;
+  --color-base-theme-2: #3EC6E0;
+  --color-base-theme-3: #EBEBEB;
   --test: green;
 }
 
@@ -13,10 +14,10 @@
 
 body {
   font: 500 1.6rem Roboto;
-  background: var( --test)
+  background: var(--color-background);
 }
 
 .wrapper {
   width: 100%;
-  padding: 0 15%;
+  padding: 0 18%;
 }

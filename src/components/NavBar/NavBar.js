@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import './styles.css';
 
-import menu from '../../assets/svgs/icon_hamburguer.svg'
+import menu from '../../assets/svgs/icon-hamburguer.svg'
 import logo from '../../assets/svgs/logo-n1-rush-fundo-escuro.svg'
 import paper_plane from '../../assets/svgs/paper-plane.svg'
 import search from '../../assets/svgs/search-solid.svg'
