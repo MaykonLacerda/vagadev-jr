@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import './styles.css'
 
 export const FeaturedCards = (props) => {
+  const [isModalVisible, setIsModalVisible] = useState(false);
   return (
     <div className="featured-cards">
       <div className="card-top">
@@ -10,7 +11,9 @@ export const FeaturedCards = (props) => {
         <div className="media-card">
           <h4>{props.name}</h4>
           <p>{props.value}</p>
-          <button>Comprar</button>
+          <div className="modal">
+            <button>Comprar</button>
+          </div>
         </div>
       </div>
     </div>

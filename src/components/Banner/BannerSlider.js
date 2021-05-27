@@ -1,11 +1,17 @@
-import React from 'react'
+import React, {useRef } from 'react'
 import Slider from "react-slick";
 
 import { BannerData } from './BannerData'
 
+import angle_left from '../../assets/svgs/angle-left-solid.svg'
+import angle_right from '../../assets/svgs/angle-right-solid.svg'
+
 import './styles.css'
 
 const BannerSlider = () => {
+
+  const sliderRef = useRef();
+
   const settings = {
     dots: true,
     fade: true,
@@ -14,14 +20,18 @@ const BannerSlider = () => {
     slidesToShow: 1,
     arrows: false,
     slidesToScroll: 1,
-    className: "slides"
+    className: "slides",
+  }
+
+  const gotoNext = () => {
+    sliderRef.current.slickNext();
   }
 
   const banner = BannerData;
 
   return (
     <div>
-      <Slider {...settings}>
+      <Slider {...settings} ref={sliderRef}>
         {banner.map((banner) => {
           return(
             <div className="banner">
@@ -35,7 +45,16 @@ const BannerSlider = () => {
                 <p>{banner.description}</p>
               </div>
               <div className="scroll">
-                <p>{banner.name}</p>
+                <div className="scroll-content">
+                  <div className="scroll-name">
+                    <h2>{banner.name}</h2>
+                  </div>
+                  <div className="scroll-next-prev">
+                    <p>1 / 2</p>
+                    <img src={angle_right} alt="" onClick={()=>gotoNext()}></img>
+                    <img src={angle_left} alt="" onClick={()=>gotoNext()}></img>
+                  </div>
+                </div>
               </div>
             </div>
           )

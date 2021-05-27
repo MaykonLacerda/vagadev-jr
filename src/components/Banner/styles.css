@@ -56,16 +56,85 @@
 
 .scroll {
   position: absolute;
-  right: 0;
+  top: 212px;
+  right: 0px;
+
+  width: 63px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-content {
+  position: relative;
+}
+
+.scroll-name {
+  position: absolute;
+
+  background: var(--color-base-theme-2);
+  color: var(--color-base-theme-3);
+  writing-mode: vertical-rl;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 300;
+  padding: 30px 26px 156px 29.32px;
+}
+
+.scroll-next-prev {
+  position: absolute;
+  bottom: 0;
+
+  background: var(--color-base-theme-1);
+  color: var(--color-base-theme-3);
+  height: 84px;
+  border-radius: 0px 0px 0px 10px;
+}
+
+.scroll-next-prev p {
+  font-size: 14px;
+}
+
+.scroll-next-prev img {
+  z-index: 10;
+  width: 10px;
+  height: 18px;
+}
+
+
+/* .scroll {
+  position: absolute;
+  right: 200px;
   top: 212px;
   z-index: 1;
 
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-name {
   color: #FFF;
   background-color: var(--color-base-theme-2);
   padding: 30px 23.7px 156px 29.32px;
   writing-mode: vertical-rl;
   font-size: 14px;
   text-transform: uppercase;
+
+  max-height: 300px;
+  max-width: 63px;
+}
+
+.scroll-next-prev {
+  max-width: 10px;
+  max-height: 18px;
+}
+
+.scroll-next-prev img {
+  display: flex;
+}
+
+.save {
+
   border-bottom: 84px solid var(--color-base-theme-1);
   border-radius: 0px 0px 0px 10px;;
-}
+} */
