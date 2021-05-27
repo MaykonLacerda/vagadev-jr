@@ -36,7 +36,7 @@ function Home() {
             <img src={featured_icon} alt="Zelda"/>
             <h2>Produtos em destaque</h2>
           </div>
-          <div className="featured-cards">
+          <div className="card-container">
             <FeaturedCards image={outriders} name="Outriders" value="R$ 200,00" />
             <FeaturedCards image={cyberpunk} name="CYBERPUNK 2077 " value="R$ 200,00" />
             <FeaturedCards image={donkey_kong} name="Donkey Kong Country Tropical Freeze" value="R$ 200,00" />

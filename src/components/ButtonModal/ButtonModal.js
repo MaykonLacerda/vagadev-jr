@@ -16,7 +16,7 @@ export const ButtonModal = () => {
         <div className="modal">
           <div className="container">
             <img src={close_btn} alt="close" onClick={() => setIsModalVisible(false)}/>
-            <h1>Pedido realizado com sucesso!</h1>
+            <p>Pedido realizado com sucesso!</p>
             <img src={mario} alt="mario" />
           </div>
         </div>

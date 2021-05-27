@@ -7,7 +7,7 @@ export const PrincipalCards = (props) => {
     <div className="principal-cards">
       <div className="card">
         <img src={props.image} alt="Zelda"/>
-        <p>{props.text}</p>
+        <p>{props.text} <span className="line"></span></p>
       </div>
     </div>
   )

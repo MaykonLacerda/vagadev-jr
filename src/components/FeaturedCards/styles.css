@@ -14,41 +14,48 @@
 
 .featured-cards {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 80px 33px 171px 0;
+
+  box-shadow: 0px 4px 20px 7px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
 }
 
 .card-top {
-  padding: 80px 33px 171px 0;
+  width: 349px;
+  height: 363px;
 }
 
 .media-card {
+  width: 350px;
+  height: 185px;
+  background: #F5F5F5;
   border-top: 2px solid var(--color-base-theme-2);
-  position: relative;
-  margin-bottom: 192px;
 }
 
 .media-card h4 {
-  position: absolute;
-  left: 36px;
-  top: 24px;
-
   color: var(--color-base-theme-1);
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  width: 187px;
+
+  padding: 25px 36px;
+  width: 80%;
+  height: 70px;
 }
 
-.media-card p {
-  position: absolute;
-  left: 36px;
-  right: 0;
-  top: 67px;
-
+.media-card > p {
   color: var(--color-base-theme-1);
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
   margin-bottom: 24px;
+
+  padding: 0 36px;
+}
+
+.media-card button {
+  margin-bottom: 21px;
 }
