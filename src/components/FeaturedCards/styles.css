@@ -24,18 +24,28 @@
 
 .media-card {
   border-top: 2px solid var(--color-base-theme-2);
-
+  position: relative;
+  margin-bottom: 192px;
 }
 
 .media-card h4 {
+  position: absolute;
+  left: 36px;
+  top: 24px;
+
   color: var(--color-base-theme-1);
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  margin: 25px 0 27px 0;
+  width: 187px;
 }
 
 .media-card p {
+  position: absolute;
+  left: 36px;
+  right: 0;
+  top: 67px;
+
   color: var(--color-base-theme-1);
   font-weight: bold;
   font-size: 18px;
@@ -44,6 +54,11 @@
 }
 
 .media-card button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 112px;
+
   width: 240px;
   height: 52px;
   background: var(--color-base-theme-2);

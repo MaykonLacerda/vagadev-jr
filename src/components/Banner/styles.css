@@ -11,7 +11,7 @@
 .banner-content {
   position: absolute;
   top: 23%;
-  right: 27%;
+  right: 26%;
 
 
   display: flex;
@@ -21,6 +21,17 @@
   color: #FFF;
   width: 420px;
   height: 327px;
+}
+
+.value {
+  display: flex;
+
+  font-size: 28px;
+  color: var(--color-base-theme-2);
+}
+
+.value h3 {
+  margin-top: 10px;
 }
 
 .banner-content h1 {
@@ -41,4 +52,20 @@
   text-align: right;
   font-size: 16px;
   line-height: 155%;
+}
+
+.scroll {
+  position: absolute;
+  right: 0;
+  top: 212px;
+  z-index: 1;
+
+  color: #FFF;
+  background-color: var(--color-base-theme-2);
+  padding: 30px 23.7px 156px 29.32px;
+  writing-mode: vertical-rl;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-bottom: 84px solid var(--color-base-theme-1);
+  border-radius: 0px 0px 0px 10px;;
 }

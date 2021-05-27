@@ -7,6 +7,11 @@ import FeaturedCards from '../../components/FeaturedCards/FeaturedCards'
 
 import featured_icon from '../../assets/svgs/featured-icon.svg'
 import logo_reduced from "../../assets/svgs/logo-reduced.svg"
+import outriders from '../../assets/svgs/outriders.svg'
+import cyberpunk from '../../assets/svgs/cyberpunk.svg'
+import donkey_kong from '../../assets/svgs/donkey-kong.svg'
+import zelda from '../../assets/img/zelda_banner.jpg'
+import sekiro from '../../assets/img/sekiro_banner.jpg'
 
 import "./styles.css"
 
@@ -20,16 +25,23 @@ function Home() {
       </header>
 
       <main className="wrapper">
-        <PrincipalCards />
+        <div className="principal">
+          <div className="principal-cards">
+            <PrincipalCards image={zelda} text="The Legend of Zelda - Breath of the wild"/>
+            <PrincipalCards image={sekiro} text="SEKIRO - Shadows die twice"/>
+          </div>
+        </div>
         <div className="featured">
           <div className="featured-title">
             <img src={featured_icon} alt="Zelda"/>
             <h2>Produtos em destaque</h2>
           </div>
-          <FeaturedCards />
+          <div className="featured-cards">
+            <FeaturedCards image={outriders} name="Outriders" value="R$ 200,00" />
+            <FeaturedCards image={cyberpunk} name="CYBERPUNK 2077 " value="R$ 200,00" />
+            <FeaturedCards image={donkey_kong} name="Donkey Kong Country Tropical Freeze" value="R$ 200,00" />
+          </div>
         </div>
-
-        <div className="end"></div>
       </main>
 
       <footer>

@@ -35,7 +35,7 @@ export const NavBar = () => {
 
           <Link to="/" className="nav-item">
             <li><img src={shopping_bag} alt="Carrinho"></img></li>
-            <li>2</li>
+            <li className="amount"><p>2</p></li>
           </Link>
         </div>
       </ul>

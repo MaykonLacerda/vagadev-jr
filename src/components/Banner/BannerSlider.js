@@ -28,8 +28,14 @@ const BannerSlider = () => {
               <img src={banner.image} alt={banner.name} />
               <div className="banner-content">
                 <h1>{banner.name}</h1>
-                <h2>{banner.value}</h2>
+                <div className="value">
+                  <h2>{banner.value}</h2>
+                  <h3>{banner.value_99}</h3>
+                </div>
                 <p>{banner.description}</p>
+              </div>
+              <div className="scroll">
+                <p>{banner.name}</p>
               </div>
             </div>
           )

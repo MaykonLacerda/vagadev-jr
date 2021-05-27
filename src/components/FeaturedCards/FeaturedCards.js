@@ -1,35 +1,15 @@
 import React from 'react'
 
-import outriders from '../../assets/svgs/outriders.svg'
-
 import './styles.css'
 
-export const FeaturedCards = () => {
+export const FeaturedCards = (props) => {
   return (
     <div className="featured-cards">
       <div className="card-top">
-        <img src={outriders} alt="outriders"/>
+        <img src={props.image} alt="outriders"/>
         <div className="media-card">
-          <h4>Outriders</h4>
-          <p>R$ 200,00</p>
-          <button>Comprar</button>
-        </div>
-      </div>
-
-      <div className="card-top">
-        <img src={outriders} alt="outriders"/>
-        <div className="media-card">
-          <h4>Outriders</h4>
-          <p>R$ 200,00</p>
-          <button>Comprar</button>
-        </div>
-      </div>
-
-      <div className="card-top">
-        <img src={outriders} alt="outriders"/>
-        <div className="media-card">
-          <h4>Outriders</h4>
-          <p>R$ 200,00</p>
+          <h4>{props.name}</h4>
+          <p>{props.value}</p>
           <button>Comprar</button>
         </div>
       </div>
