@@ -1,4 +1,4 @@
-.button button {
+.button  {
   width: 240px;
   height: 52px;
   background: var(--color-base-theme-2);
@@ -13,7 +13,7 @@
   color: var(--color-base-theme-3);
 }
 
-.button button:hover {
+.button:hover {
   background: var(--color-base-theme-1);
   cursor: pointer;
   transition: 0.2s;
@@ -29,20 +29,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   background: rgba(8, 65, 84, 0.62);
 }
 
-.modal img:hover {
+.close:hover {
   cursor: pointer;
 }
 
+.close {
+  align-self: flex-end;
+  margin: 10px 10px 0 0;
+}
+
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   background: var(--color-base-theme-3);
   border-radius: 5px;
-  padding: 15px;
   text-align: center;
   font-size: 30px;
   font-weight: 300;
   color: var(--color-base-theme-1);
+  width: 400.21px;
+  height: 500px;
+}
+
+.line-modal {
+  background: var(--color-base-theme-1);
+  height: 1px;
+  width: 30%;
+}
+
+.styles-text-modal {
+  display: flex;
+  align-items: center;
+
+  margin-top: 40px;
 }

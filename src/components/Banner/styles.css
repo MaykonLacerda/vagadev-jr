@@ -34,17 +34,17 @@
   margin-top: 10px;
 }
 
-.banner-content h1 {
+.name-banner{
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 46px;
-  color: var(--color-base-theme-3)
+  font-size: 41px;
+  color: var(--color-base-theme-3);
+  width: 100%;
+  text-align: right;
 }
 
-.banner-content h2 {
-  font-size: 70px;
-  font-weight: 900;
-  color: var(--color-base-theme-2)
+.banner-content {
+
 }
 
 .banner-content p {
@@ -65,26 +65,19 @@
   flex-direction: column;
 }
 
-.scroll-content {
-  position: relative;
-}
-
 .scroll-name {
-  position: absolute;
+  display: flex;
+  align-items: center;
 
   background: var(--color-base-theme-2);
   color: var(--color-base-theme-3);
   writing-mode: vertical-rl;
   font-size: 14px;
   text-transform: uppercase;
-  height: 300;
-  padding: 30px 26px 156px 29.32px;
+  padding: 30px 0;
 }
 
 .scroll-next-prev {
-  position: absolute;
-  bottom: 0;
-
   background: var(--color-base-theme-1);
   color: var(--color-base-theme-3);
   height: 84px;
@@ -92,11 +85,11 @@
 }
 
 .scroll-next-prev p {
+  text-align: center;
   font-size: 14px;
 }
 
 .scroll-next-prev img {
-  z-index: 10;
   width: 10px;
   height: 18px;
 }

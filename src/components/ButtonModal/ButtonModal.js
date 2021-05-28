@@ -10,13 +10,15 @@ export const ButtonModal = () => {
   const [isModalVisible, setIsModalVisible] = useState(false)
 
   return (
-    <div className="button">
-      <button onClick={() => setIsModalVisible(true)}>Comprar</button>
+    <div>
+      <button className="button" onClick={() => setIsModalVisible(true)}>Comprar</button>
       {isModalVisible ? (
         <div className="modal">
           <div className="container">
-            <img src={close_btn} alt="close" onClick={() => setIsModalVisible(false)}/>
-            <p>Pedido realizado com sucesso!</p>
+            <img className="close" src={close_btn} alt="close" onClick={() => setIsModalVisible(false)}/>
+            <div className="styles-text-modal">
+              <span className="line-modal"></span><p>Pedido realizado com sucesso!</p><span className="line-modal"></span>
+            </div>
             <img src={mario} alt="mario" />
           </div>
         </div>

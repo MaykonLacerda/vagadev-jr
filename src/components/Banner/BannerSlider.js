@@ -37,23 +37,21 @@ const BannerSlider = () => {
             <div className="banner">
               <img src={banner.image} alt={banner.name} />
               <div className="banner-content">
-                <h1>{banner.name}</h1>
+                <h2 className="name-banner">{banner.name}</h2>
                 <div className="value">
                   <h2>{banner.value}</h2>
-                  <h3>{banner.value_99}</h3>
+                  <p>{banner.value_99}</p>
                 </div>
                 <p>{banner.description}</p>
               </div>
               <div className="scroll">
-                <div className="scroll-content">
-                  <div className="scroll-name">
-                    <h2>{banner.name}</h2>
-                  </div>
-                  <div className="scroll-next-prev">
-                    <p>1 / 2</p>
-                    <img src={angle_right} alt="" onClick={()=>gotoNext()}></img>
-                    <img src={angle_left} alt="" onClick={()=>gotoNext()}></img>
-                  </div>
+                <div className="scroll-name">
+                  <p>{banner.name}</p>
+                </div>
+                <div className="scroll-next-prev">
+                  <p>1 / 2</p>
+                  <img src={angle_right} alt="" onClick={()=>gotoNext()}></img>
+                  <img src={angle_left} alt="" onClick={()=>gotoNext()}></img>
                 </div>
               </div>
             </div>
