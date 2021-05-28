@@ -8,14 +8,20 @@ import './styles.css';
 export const ButtonModal = () => {
 
   const [isModalVisible, setIsModalVisible] = useState(false)
+  const [isItsBuy, setIsItsBuy] = useState(false)
 
   const buy = () => {
-    setIsModalVisible(true)
+    setIsModalVisible(true);
+    setIsItsBuy(true);
   }
 
   return (
     <div>
-      <button id="buy"className="button" onClick={() => buy()}>Comprar</button>
+      <div className="button">
+        {!isItsBuy ? (
+            <button className="buy" onClick={() => buy()}>Comprar</button>
+          ) : <button className="itsBuy">Comprado!<img src={mario} alt="" /></button>}
+      </div>
       {isModalVisible ? (
         <div className="modal">
           <div className="container">

@@ -53,7 +53,6 @@ export const NavBar = () => {
               </div>
             ) : null}
           </li>
-
           <Link to="/">
             <li>
               <img src={logo} alt="N1 Rush"></img>
@@ -72,9 +71,9 @@ export const NavBar = () => {
           </Link>
         </div>
         <Link to="/" className="nav-item shopping">
-            <li><img src={shopping_bag} alt="Carrinho"></img></li>
-            <li className="amount"><p>2</p></li>
-          </Link>
+          <li><img src={shopping_bag} alt="Carrinho"></img></li>
+          <li className="amount"><p>2</p></li>
+        </Link>
       </ul>
     </nav>
   )
