@@ -6,12 +6,12 @@
   margin-top: 44px;
 }
 
-.principal {
-  position: absolute;
-  top: 692px;
-  left: 0;
-  right: 0;
+.principal-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  margin-top: -150px;
 }
 
 .card-container {

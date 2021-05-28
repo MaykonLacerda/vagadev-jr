@@ -29,7 +29,7 @@
   border-left: 11px solid var(--color-base-theme-1);
 }
 
-.line {
+.line-princapal-card {
   background: var(--color-base-theme-1);
   height: 1px;
   width: 247px;

@@ -13,10 +13,9 @@ const BannerSlider = () => {
   const sliderRef = useRef();
 
   const settings = {
-    dots: true,
     fade: true,
     infinite: true,
-    speed: 500,
+    speed: 800,
     slidesToShow: 1,
     arrows: false,
     slidesToScroll: 1,
@@ -27,6 +26,10 @@ const BannerSlider = () => {
     sliderRef.current.slickNext();
   }
 
+  const gotoPrev = () => {
+    sliderRef.current.slickPrev();
+  }
+
   const banner = BannerData;
 
   return (
@@ -35,23 +38,25 @@ const BannerSlider = () => {
         {banner.map((banner) => {
           return(
             <div className="banner">
-              <img src={banner.image} alt={banner.name} />
+              <img className="banner-bkgd-image"src={banner.image} alt={banner.name} />
               <div className="banner-content">
                 <h2 className="name-banner">{banner.name}</h2>
                 <div className="value">
-                  <h2>{banner.value}</h2>
+                  <h3>{banner.value}</h3>
                   <p>{banner.value_99}</p>
                 </div>
                 <p>{banner.description}</p>
               </div>
               <div className="scroll">
                 <div className="scroll-name">
-                  <p>{banner.name}</p>
+                  <p>{banner.name}</p><span className="line-banner"></span>
                 </div>
                 <div className="scroll-next-prev">
-                  <p>1 / 2</p>
-                  <img src={angle_right} alt="" onClick={()=>gotoNext()}></img>
-                  <img src={angle_left} alt="" onClick={()=>gotoNext()}></img>
+                  <p className="amount-banner">{banner.position} / 2</p>
+                  <div className="next_prev_icon">
+                    <img src={angle_left} alt="" onClick={()=>gotoPrev()}></img>
+                    <img src={angle_right} alt="" onClick={()=>gotoNext()}></img>
+                  </div>
                 </div>
               </div>
             </div>

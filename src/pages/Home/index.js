@@ -26,7 +26,7 @@ function Home() {
 
       <main className="wrapper">
         <div className="principal">
-          <div className="principal-cards">
+          <div className="principal-card-container">
             <PrincipalCards image={zelda} text="The Legend of Zelda - Breath of the wild"/>
             <PrincipalCards image={sekiro} text="SEKIRO - Shadows die twice"/>
           </div>
