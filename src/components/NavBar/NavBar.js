@@ -52,7 +52,6 @@ export const NavBar = () => {
                 </div>
               </div>
             ) : null}
-
           </li>
 
           <Link to="/">
@@ -71,12 +70,11 @@ export const NavBar = () => {
             <li><img src={search} alt="Buscar"></img></li>
             <li>Buscar</li>
           </Link>
-
-          <Link to="/" className="nav-item">
+        </div>
+        <Link to="/" className="nav-item shopping">
             <li><img src={shopping_bag} alt="Carrinho"></img></li>
             <li className="amount"><p>2</p></li>
           </Link>
-        </div>
       </ul>
     </nav>
   )
