@@ -9,9 +9,13 @@ export const ButtonModal = () => {
 
   const [isModalVisible, setIsModalVisible] = useState(false)
 
+  const buy = () => {
+    setIsModalVisible(true)
+  }
+
   return (
     <div>
-      <button className="button" onClick={() => setIsModalVisible(true)}>Comprar</button>
+      <button className="button" onClick={() => buy()}>Comprar</button>
       {isModalVisible ? (
         <div className="modal">
           <div className="container">

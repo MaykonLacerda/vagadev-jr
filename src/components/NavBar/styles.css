@@ -10,7 +10,6 @@
 
 .nav-list li {
   list-style: none;
-  margin-right: 2rem;
 }
 
 .nav-item {
@@ -18,14 +17,10 @@
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 500;
-  color: #FFF;
 
 }
 
-.nav-item img {
+.nav-item > img {
   margin-right: -15px;
 }
 
@@ -36,15 +31,15 @@
 .client-menu {
   display: flex;
   border-right: 1px solid;
+  text-transform: uppercase;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFF;
 }
 
-.nav-item.client-menu {
-  margin: 0 39px 0 -39px;
-  padding-left: 39px;
-}
-
-.menu {
-  padding-right: 43px;
+.client-menu > li{
+  margin-right: 2rem;
 }
 
 .amount {
@@ -57,4 +52,68 @@
   height: 23px;
   border-radius: 100%;
   margin-left: -10px;
+}
+
+.menu {
+  padding-right: 43px;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: relative;
+  top: 28px;
+  right: 30px;
+}
+
+.arrow-menu {
+  position: absolute;
+  top: -9px;
+  right: -20px;
+
+  transform: rotate(45deg);
+  width: 18px;
+  height: 18px;
+  background: var(--color-base-theme-2);
+}
+
+.game-genre {
+  position: absolute;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFF;
+  background-color: var(--color-base-theme-1);
+  padding: 45px 46px 42px;
+  border: 2px solid #3EC6E0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 10px 10px 0 0 var(--color-base-theme-2);
+}
+
+.genre > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 8px 0 8px 16px;
+  width: 166px;
+  margin: 5px 25px 0 -16px ;
+  border-radius: 5px;
+}
+
+.genre > li:hover {
+  cursor: pointer;
+  background: var(--color-base-theme-2);
+}
+
+.genre > p {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 21px;
 }
