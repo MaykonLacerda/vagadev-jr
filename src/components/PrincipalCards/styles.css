@@ -11,6 +11,7 @@
 
 .card {
   padding: 0 10px;
+  z-index: 1;
 }
 
 .card p {

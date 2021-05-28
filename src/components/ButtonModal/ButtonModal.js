@@ -15,7 +15,7 @@ export const ButtonModal = () => {
 
   return (
     <div>
-      <button className="button" onClick={() => buy()}>Comprar</button>
+      <button id="buy"className="button" onClick={() => buy()}>Comprar</button>
       {isModalVisible ? (
         <div className="modal">
           <div className="container">
